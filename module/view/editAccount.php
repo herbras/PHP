@@ -26,7 +26,6 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)) {
     $users[] = $row;
 }
 
-// Close the database connection
 $conn->close();
 ?>
 <!DOCTYPE html>
@@ -34,9 +33,8 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Dashboard</title>
     <style>
-        /* Custom Pink Theme */
 :root {
     --bs-pink: #ff69b4;
     --bs-dark-pink: #ff85c2;
@@ -47,7 +45,6 @@ body {
     color: #333;
 }
 
-/* Customizing the Bootstrap Buttons */
 .btn-primary, .btn-success {
     background-color: var(--bs-pink);
     border-color: var(--bs-pink);
@@ -58,7 +55,6 @@ body {
     border-color: var(--bs-dark-pink);
 }
 
-/* Table and Form Styling */
 .table thead th {
     background-color: var(--bs-pink);
     color: #fff;
@@ -68,7 +64,6 @@ body {
     color: var(--bs-pink);
 }
 
-/* Modal Customization */
 .modal-content {
     border-color: var(--bs-pink);
 }
@@ -78,7 +73,6 @@ body {
     color: #fff;
 }
 
-/* Button Close in Modal */
 .btn-close {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
